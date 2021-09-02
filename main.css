@@ -4,7 +4,13 @@
 
 table {}
 
-td {}
+
+td~td {
+  text-align:left;
+}
+td+td {
+  text-align:right;
+}
 
 /* This is for the current block */
 .main-table {
