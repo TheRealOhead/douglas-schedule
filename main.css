@@ -1,3 +1,7 @@
+* {
+  font-family:sans-serif;
+}
+
 table {}
 
 td {}
@@ -5,4 +9,8 @@ td {}
 /* This is for the current block */
 .main-table {
   font-size:40pt;
+  width:500px;
+  margin:auto;
+  margin-top:35px;
 }
+
