@@ -2,7 +2,11 @@
   font-family:sans-serif;
 }
 
-table {}
+/* All tables must be in the center and have the same width */
+table {
+  width:500px;
+  margin:auto;
+}
 
 
 td~td {
