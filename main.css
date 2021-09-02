@@ -1,1 +1,8 @@
+table {}
 
+td {}
+
+/* This is for the current block */
+.main-table {
+  font-size:40pt;
+}
