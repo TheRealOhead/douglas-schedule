@@ -6,25 +6,30 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
+    
+
+
+
     <table><tr><td>
       <select id="day-selector">
       </select>
-      <!-- Make day selector generate from JS -->
-      <script>
-        let d = document.getElementById('day-selector');
-        for (let i = 1; i <= 7; i++) {
-          let o = document.createElement('option');
-          o.value = i;
-          o.innerHTML = 'Day ' + i;
-          d.appendChild(o);
-        };
-      </script>
+      <!-- Day selector generates from JS -->
     </td></tr></table>
+    
+
+
     <table class="main-table">
       <tr>
-        <td>Block</td><td>12:59:59</td>
+        <td>Block</td><td><span id="main-time-left">12:59:59</span></td>
       </tr>
     </table>
+
+    <table class="all-blocks" id="all-blocks">
+      <!-- This will also be filled in with JS -->
+    </table>
+
+
+
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

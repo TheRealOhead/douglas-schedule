@@ -21,12 +21,16 @@ td+td {
 /* This is for the current block */
 .main-table {
   font-size:40pt;
-  width:500px;
-  margin:auto;
   margin-top:35px;
+}
+
+.all-blocks {
+  font-size: 25pt;
+  margin-top:50px;
 }
 
 select {
   width:100%;
   height:40px;
+  font-size:30px;
 }
