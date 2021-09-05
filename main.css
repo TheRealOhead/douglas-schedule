@@ -34,3 +34,11 @@ select {
   height:40px;
   font-size:30px;
 }
+
+/* Odd rows are white and even rows are gray */
+.odd-row {
+  background-color: #fff;
+}
+.even-row {
+  background-color: #eee;
+}
