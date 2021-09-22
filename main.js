@@ -51,6 +51,7 @@ function redraw() {
 
 
   // Generate all six blocks in the "all-blocks" table
+  let e = document.getElementById('all-blocks');
   clearElement(e);
   for (let i = 0; i < dayCount; i++) {
     
