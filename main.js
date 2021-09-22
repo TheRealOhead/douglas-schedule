@@ -15,8 +15,17 @@ const alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P
 
 
 
-const dayCount = 6;
-const blockCount = 7;
+const dayCount = 7;
+const blockCount = 6; // Per day
+
+
+// Tuesday or thursday
+let today = new Date();
+if (today.getDay() == 2 || today.getDay() == 4) {
+  const advisoryDay = true;
+} else {
+  const advisoryDay = false;
+};
 
 
 
@@ -37,6 +46,7 @@ function redraw() {
 
   // Generate all six blocks in the "all-blocks" table
   let e = document.getElementById('all-blocks');
+  e.innerHTML = '';
   for (let i = 0; i < dayCount; i++) {
     
     // Make elements
@@ -80,5 +90,5 @@ function setDay() {
 
 // Update function every second
 setInterval(()=>{
-
+  
 },1000);
