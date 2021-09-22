@@ -40,13 +40,18 @@ for (let i = 1; i <= dayCount; i++) {
 
 
 
+
+function clearElement(e) {
+  e.innerHTML = '';
+};
+
+
 // Redraws nonstatic elements
 function redraw() {
 
 
   // Generate all six blocks in the "all-blocks" table
-  let e = document.getElementById('all-blocks');
-  e.innerHTML = '';
+  clearElement(e);
   for (let i = 0; i < dayCount; i++) {
     
     // Make elements
