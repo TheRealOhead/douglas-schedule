@@ -87,11 +87,12 @@ daySelector.addEventListener('change',()=>{
 });
 
 // This should not be updated directly, as setDay() updates screen info
-var currentDay = -1;
+let currentDay = -1;
 
 // Changes the day and updates relevant screen info
-function setDay() {
-
+function setDay(dayNumber) {
+  currentDay = dayNumber();
+  redraw();
 };
 
 // Update function every second
